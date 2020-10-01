@@ -1,7 +1,17 @@
+import tesla_powerwall_2.py
+
+
 class Battery:
 
-    #Battery should keep track of it's internal charge, (colombs? kWh?)
-    charge = 0
+    #Variables for storing battery specific information
+    charge = 0 #kWh
+
+    #Constants to define battery behavior
+    MAX_CHARGE           = tesla_powerwall_2.TOTAL_ENERGY #kWh
+    USABLE_CHARGE        = tesla_powerwall_2.USABLE_ENERGY #kWh
+    MAX_CONTINUOUS       = tesla_powerwall_2.MAX_CONTINUOUS #kVA
+    STORAGE_EFFICIENCY   = tesla_powerwall_2.STORAGE_EFFICIENCY #No unit
+    DEPLETION_EFFICIENCY = tesla_powerwall_2.DEPLETION_EFFICIENCY #No unit
 
     #Function to charge battery based on some formula
     def addCharge(self):

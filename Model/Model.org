@@ -1,7 +1,0 @@
-The purpose of this model is to work as a proof of concept for our design.
-The goal is to simmulate **stuff
-
-* What we need
-** Temperature Data
-** Pricing Data
-** Energy demand data?
